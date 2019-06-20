@@ -11,6 +11,9 @@
 		C719B3CC22BBE40B008B7A04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C719B3CA22BBE40B008B7A04 /* Main.storyboard */; };
 		C719B3CE22BBE40C008B7A04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C719B3CD22BBE40C008B7A04 /* Assets.xcassets */; };
 		C719B3D122BBE40C008B7A04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C719B3CF22BBE40C008B7A04 /* LaunchScreen.storyboard */; };
+		C719B3D922BBE880008B7A04 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3D822BBE880008B7A04 /* TitleViewController.swift */; };
+		C719B3DB22BBF2EB008B7A04 /* Tsume_selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3DA22BBF2EB008B7A04 /* Tsume_selectViewController.swift */; };
+		C719B3DD22BBFCDA008B7A04 /* NounaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3DC22BBFCDA008B7A04 /* NounaiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		C719B3CD22BBE40C008B7A04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C719B3D022BBE40C008B7A04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C719B3D222BBE40C008B7A04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C719B3D822BBE880008B7A04 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		C719B3DA22BBF2EB008B7A04 /* Tsume_selectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tsume_selectViewController.swift; sourceTree = "<group>"; };
+		C719B3DC22BBFCDA008B7A04 /* NounaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NounaiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				C719B3CD22BBE40C008B7A04 /* Assets.xcassets */,
 				C719B3CF22BBE40C008B7A04 /* LaunchScreen.storyboard */,
 				C719B3D222BBE40C008B7A04 /* Info.plist */,
+				C719B3D822BBE880008B7A04 /* TitleViewController.swift */,
+				C719B3DA22BBF2EB008B7A04 /* Tsume_selectViewController.swift */,
+				C719B3DC22BBFCDA008B7A04 /* NounaiViewController.swift */,
 			);
 			path = "Tsume-syogi";
 			sourceTree = "<group>";
@@ -133,6 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C719B3C722BBE40B008B7A04 /* AppDelegate.swift in Sources */,
+				C719B3DB22BBF2EB008B7A04 /* Tsume_selectViewController.swift in Sources */,
+				C719B3DD22BBFCDA008B7A04 /* NounaiViewController.swift in Sources */,
+				C719B3D922BBE880008B7A04 /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

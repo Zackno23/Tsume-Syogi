@@ -26,26 +26,288 @@
             </objects>
             <point key="canvasLocation" x="-838" y="-278"/>
         </scene>
-        <!--View Controller-->
+        <!--Title View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tsume_syogi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TitleViewController" customModule="Tsume_syogi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-aa-Ygj">
-                                <rect key="frame" x="87" y="232" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hajimenoippu" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-aa-Ygj">
+                                <rect key="frame" x="57" y="244" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="rac-sW-dXI"/>
+                                    <constraint firstAttribute="height" constant="200" id="sRm-RQ-WVT"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYi-y2-8YM">
+                                <rect key="frame" x="157" y="584" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="kHo-jC-NVL"/>
+                                    <constraint firstAttribute="height" constant="60" id="uaM-TS-rC9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <state key="normal" title="脳内将棋"/>
+                                <connections>
+                                    <segue destination="0Ok-ce-8aD" kind="show" id="abd-lY-jlu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQs-Ox-7oy">
+                                <rect key="frame" x="157" y="484" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3zC-JH-LWe"/>
+                                    <constraint firstAttribute="height" constant="60" id="iXy-9W-if1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <state key="normal" title="詰将棋道場"/>
+                                <connections>
+                                    <segue destination="ijt-Be-rrr" kind="show" id="yRB-v7-1CS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xQs-Ox-7oy" firstAttribute="top" secondItem="0dT-aa-Ygj" secondAttribute="bottom" constant="40" id="Oi5-DL-sN2"/>
+                            <constraint firstItem="hYi-y2-8YM" firstAttribute="top" secondItem="xQs-Ox-7oy" secondAttribute="bottom" constant="40" id="Ole-mX-79n"/>
+                            <constraint firstItem="hYi-y2-8YM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VHf-eE-eXY"/>
+                            <constraint firstItem="0dT-aa-Ygj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eb1-7Z-vIZ"/>
+                            <constraint firstItem="0dT-aa-Ygj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="rGN-gJ-BdE"/>
+                            <constraint firstItem="xQs-Ox-7oy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yoX-vS-YPm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="-285"/>
+            <point key="canvasLocation" x="21.739130434782609" y="-285.26785714285711"/>
+        </scene>
+        <!--Nounai View Controller-->
+        <scene sceneID="iYn-tk-Jqu">
+            <objects>
+                <viewController id="0Ok-ce-8aD" customClass="NounaiViewController" customModule="Tsume_syogi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FEv-Bh-9Ej">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レベル選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCM-b9-9f2">
+                                <rect key="frame" x="131" y="84" width="152" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mx-dm-dmk">
+                                <rect key="frame" x="147" y="240" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8fm-8U-1jH"/>
+                                    <constraint firstAttribute="height" constant="50" id="h9r-4b-GvH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="初心者"/>
+                                <connections>
+                                    <action selector="syoshinsya:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="UDB-WU-UME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pS-0J-v4r">
+                                <rect key="frame" x="97" y="240" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Xz-VN-97P"/>
+                                    <constraint firstAttribute="width" constant="50" id="wHY-6U-0hF"/>
+                                </constraints>
+                                <state key="normal" image="ふ_3"/>
+                                <connections>
+                                    <action selector="syoshinsya:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="waK-5J-sZB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HR6-Gd-PEr">
+                                <rect key="frame" x="147" y="410" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="jKB-pP-fvn"/>
+                                    <constraint firstAttribute="height" constant="50" id="loI-e9-WS4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="中級者"/>
+                                <connections>
+                                    <action selector="cyukyusya:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="wTU-lZ-iQ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU8-GX-qNv">
+                                <rect key="frame" x="147" y="580" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="NGt-0F-y8Z"/>
+                                    <constraint firstAttribute="height" constant="50" id="fsr-5d-7dn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="ガチ勢"/>
+                                <connections>
+                                    <action selector="gachizei:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="GJx-AN-oYL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teQ-ty-Cxc">
+                                <rect key="frame" x="89" y="410" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="AkB-lg-mES"/>
+                                    <constraint firstAttribute="height" constant="50" id="hBP-6Q-qii"/>
+                                </constraints>
+                                <state key="normal" image="銀_1"/>
+                                <connections>
+                                    <action selector="cyukyusya:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="Xl6-d3-c3v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHo-fH-2Ts">
+                                <rect key="frame" x="97" y="580" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bYe-9g-Rap"/>
+                                    <constraint firstAttribute="width" constant="50" id="rhC-9j-PBo"/>
+                                </constraints>
+                                <state key="normal" image="飛車"/>
+                                <connections>
+                                    <action selector="gachizei:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="GIL-Uh-689"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RU8-GX-qNv" firstAttribute="leading" secondItem="xHo-fH-2Ts" secondAttribute="trailing" id="2tP-pz-ocE"/>
+                            <constraint firstItem="HR6-Gd-PEr" firstAttribute="top" secondItem="4mx-dm-dmk" secondAttribute="bottom" constant="120" id="3be-NF-xUh"/>
+                            <constraint firstItem="RU8-GX-qNv" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="Ex2-S5-Dtv"/>
+                            <constraint firstItem="4mx-dm-dmk" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="M62-fK-JND"/>
+                            <constraint firstItem="4mx-dm-dmk" firstAttribute="leading" secondItem="8pS-0J-v4r" secondAttribute="trailing" id="UHt-xc-UBx"/>
+                            <constraint firstItem="xHo-fH-2Ts" firstAttribute="top" secondItem="teQ-ty-Cxc" secondAttribute="bottom" constant="120" id="WPx-rB-I0z"/>
+                            <constraint firstItem="RU8-GX-qNv" firstAttribute="top" secondItem="HR6-Gd-PEr" secondAttribute="bottom" constant="120" id="Wja-vY-XZG"/>
+                            <constraint firstItem="OCM-b9-9f2" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="YFC-ix-qUx"/>
+                            <constraint firstItem="HR6-Gd-PEr" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="ZgA-DO-0e7"/>
+                            <constraint firstItem="4mx-dm-dmk" firstAttribute="top" secondItem="OCM-b9-9f2" secondAttribute="bottom" constant="120" id="bxN-GT-NBd"/>
+                            <constraint firstItem="8pS-0J-v4r" firstAttribute="top" secondItem="OCM-b9-9f2" secondAttribute="bottom" constant="120" id="faV-QM-Y7e"/>
+                            <constraint firstItem="HR6-Gd-PEr" firstAttribute="leading" secondItem="teQ-ty-Cxc" secondAttribute="trailing" constant="8" symbolic="YES" id="i4t-qQ-8iN"/>
+                            <constraint firstItem="HR6-Gd-PEr" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="qCb-nn-XDp"/>
+                            <constraint firstItem="OCM-b9-9f2" firstAttribute="top" secondItem="Hwn-oc-f1K" secondAttribute="top" constant="40" id="rCT-Bu-khF"/>
+                            <constraint firstItem="teQ-ty-Cxc" firstAttribute="top" secondItem="8pS-0J-v4r" secondAttribute="bottom" constant="120" id="yrC-pt-O6L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hwn-oc-f1K"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHl-0T-MZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.6521739130435" y="491.51785714285711"/>
+        </scene>
+        <!--Tsume select View Controller-->
+        <scene sceneID="JaW-5E-nu2">
+            <objects>
+                <viewController id="ijt-Be-rrr" customClass="Tsume_selectViewController" customModule="Tsume_syogi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rnb-G6-pla">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-Fc-Jij">
+                                <rect key="frame" x="117" y="135.5" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="T6B-JP-4tK"/>
+                                    <constraint firstAttribute="height" constant="45" id="c6X-9p-drq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <state key="normal" title="三手詰め"/>
+                                <connections>
+                                    <action selector="selectLevel:" destination="ijt-Be-rrr" eventType="touchUpInside" id="e12-4n-eQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxu-YR-IEg">
+                                <rect key="frame" x="117" y="280.5" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="5B4-0J-cfw"/>
+                                    <constraint firstAttribute="height" constant="45" id="SZo-SW-7PC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <state key="normal" title="五手詰め"/>
+                                <connections>
+                                    <action selector="selectLevel:" destination="ijt-Be-rrr" eventType="touchUpInside" id="d3j-pA-whW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toQ-8X-pIT">
+                                <rect key="frame" x="117" y="425.5" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7RE-eM-fHY"/>
+                                    <constraint firstAttribute="width" constant="180" id="UEH-g8-54c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <state key="normal" title="七手詰め"/>
+                                <connections>
+                                    <action selector="selectLevel:" destination="ijt-Be-rrr" eventType="touchUpInside" id="GAi-gT-YYR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWT-YO-29w">
+                                <rect key="frame" x="80" y="682" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OVq-sq-n5U"/>
+                                    <constraint firstAttribute="width" constant="100" id="VRr-nH-3mL"/>
+                                </constraints>
+                                <state key="normal" title="タイトル"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="JNx-ys-hJO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="400-cO-SHx">
+                                <rect key="frame" x="184" y="632" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CmW-90-5PQ"/>
+                                    <constraint firstAttribute="height" constant="150" id="U29-x2-MyH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
+                                <state key="normal" title="挑戦！"/>
+                                <connections>
+                                    <segue destination="gjG-KK-u5z" kind="show" id="J8c-4a-EhU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yJ8-Mq-qR2" firstAttribute="bottom" secondItem="400-cO-SHx" secondAttribute="bottom" constant="80" id="0rW-EW-1qu"/>
+                            <constraint firstItem="cWT-YO-29w" firstAttribute="leading" secondItem="yJ8-Mq-qR2" secondAttribute="leading" constant="80" id="AoA-8n-VJd"/>
+                            <constraint firstItem="toQ-8X-pIT" firstAttribute="centerX" secondItem="Rnb-G6-pla" secondAttribute="centerX" id="Jv8-4z-ECt"/>
+                            <constraint firstItem="zxu-YR-IEg" firstAttribute="centerX" secondItem="Rnb-G6-pla" secondAttribute="centerX" id="NMq-4L-Rrm"/>
+                            <constraint firstItem="toQ-8X-pIT" firstAttribute="top" secondItem="zxu-YR-IEg" secondAttribute="bottom" constant="100" id="NdY-Z2-Cuc"/>
+                            <constraint firstItem="yJ8-Mq-qR2" firstAttribute="trailing" secondItem="400-cO-SHx" secondAttribute="trailing" constant="80" id="Q3J-bH-Cvc"/>
+                            <constraint firstItem="0bk-Fc-Jij" firstAttribute="centerX" secondItem="Rnb-G6-pla" secondAttribute="centerX" id="X0y-Z7-AD2"/>
+                            <constraint firstItem="toQ-8X-pIT" firstAttribute="centerY" secondItem="Rnb-G6-pla" secondAttribute="centerY" id="h2H-1P-ec9"/>
+                            <constraint firstItem="yJ8-Mq-qR2" firstAttribute="bottom" secondItem="cWT-YO-29w" secondAttribute="bottom" constant="80" id="jfx-gW-KAX"/>
+                            <constraint firstItem="zxu-YR-IEg" firstAttribute="top" secondItem="0bk-Fc-Jij" secondAttribute="bottom" constant="100" id="spb-No-wyt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yJ8-Mq-qR2"/>
+                    </view>
+                    <connections>
+                        <outlet property="five" destination="zxu-YR-IEg" id="R4j-1h-IxR"/>
+                        <outlet property="seven" destination="toQ-8X-pIT" id="8aF-Ok-e0k"/>
+                        <outlet property="three" destination="0bk-Fc-Jij" id="lzx-sq-3bT"/>
+                        <outlet property="tsume_start" destination="400-cO-SHx" id="G6b-ZO-2V7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAO-bA-ACY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.6521739130435" y="-285.26785714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cd8-Mx-9wI">
+            <objects>
+                <viewController id="gjG-KK-u5z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ngx-mE-VAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="riM-nt-0FP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYq-dH-esh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="-285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hajimenoippu" width="602" height="336"/>
+        <image name="ふ_3" width="876" height="938"/>
+        <image name="銀_1" width="876" height="938"/>
+        <image name="飛車" width="876" height="938"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JNx-ys-hJO"/>
+    </inferredMetricsTieBreakers>
 </document>
