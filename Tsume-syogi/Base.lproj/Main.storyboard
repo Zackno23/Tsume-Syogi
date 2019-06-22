@@ -311,6 +311,9 @@
                                     <constraint firstAttribute="width" constant="60" id="O4v-AH-Ehy"/>
                                 </constraints>
                                 <state key="normal" title="段"/>
+                                <connections>
+                                    <action selector="DanButton:" destination="bre-tv-eMJ" eventType="touchUpInside" id="FWk-mU-naG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyb-kn-6CY">
                                 <rect key="frame" x="87" y="418" width="60" height="60"/>
@@ -319,6 +322,9 @@
                                     <constraint firstAttribute="height" constant="60" id="jfb-OZ-BTO"/>
                                 </constraints>
                                 <state key="normal" title="筋"/>
+                                <connections>
+                                    <action selector="SujiButton:" destination="bre-tv-eMJ" eventType="touchUpInside" id="1su-td-iBf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZd-ag-epm">
                                 <rect key="frame" x="267" y="418" width="60" height="60"/>
@@ -327,6 +333,9 @@
                                     <constraint firstAttribute="width" constant="60" id="yyo-72-zuv"/>
                                 </constraints>
                                 <state key="normal" title="駒"/>
+                                <connections>
+                                    <action selector="KomaButton:" destination="bre-tv-eMJ" eventType="touchUpInside" id="c7g-t8-ImG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -350,6 +359,10 @@
                     </view>
                     <connections>
                         <outlet property="Funyanza" destination="A8O-g9-GPh" id="TSD-mI-JXf"/>
+                        <outlet property="danButton" destination="Fbj-8Z-DvF" id="xGh-WF-l8t"/>
+                        <outlet property="komaButton" destination="OZd-ag-epm" id="kxc-tp-HDb"/>
+                        <outlet property="picker" destination="ETb-HD-8P3" id="ibj-tg-XZj"/>
+                        <outlet property="sujiButton" destination="uyb-kn-6CY" id="xFc-Yl-bnT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qb-NW-9dV" userLabel="First Responder" sceneMemberID="firstResponder"/>
