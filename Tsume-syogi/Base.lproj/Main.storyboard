@@ -234,16 +234,29 @@
                                     <segue destination="bre-tv-eMJ" kind="show" id="hBg-ay-bVP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e2-D1-Rst">
+                                <rect key="frame" x="117" y="473" width="180" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dbl-pl-pf4"/>
+                                    <constraint firstAttribute="width" constant="180" id="zPB-x6-cPZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YDA-in-SaR" firstAttribute="centerX" secondItem="klX-Yq-la3" secondAttribute="centerX" id="6u0-9x-RPf"/>
                             <constraint firstItem="YDA-in-SaR" firstAttribute="top" secondItem="E4s-ws-C5T" secondAttribute="top" constant="100" id="O6G-zj-tx7"/>
+                            <constraint firstItem="3e2-D1-Rst" firstAttribute="centerX" secondItem="klX-Yq-la3" secondAttribute="centerX" id="VQY-f4-BH4"/>
+                            <constraint firstItem="3e2-D1-Rst" firstAttribute="centerY" secondItem="klX-Yq-la3" secondAttribute="centerY" constant="50" id="qbT-vO-Kcm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E4s-ws-C5T"/>
                     </view>
                     <connections>
                         <outlet property="furigoma" destination="YDA-in-SaR" id="S6F-if-WU7"/>
+                        <outlet property="sengoText" destination="3e2-D1-Rst" id="w5C-pV-7Jh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KH1-EX-RMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
