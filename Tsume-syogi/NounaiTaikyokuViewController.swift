@@ -9,9 +9,11 @@
 import UIKit
 
 class NounaiTaikyokuViewController: UIViewController {
-
+    @IBOutlet weak var Funyanza: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
