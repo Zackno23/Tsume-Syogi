@@ -14,6 +14,8 @@
 		C719B3D922BBE880008B7A04 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3D822BBE880008B7A04 /* TitleViewController.swift */; };
 		C719B3DB22BBF2EB008B7A04 /* Tsume_selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3DA22BBF2EB008B7A04 /* Tsume_selectViewController.swift */; };
 		C719B3DD22BBFCDA008B7A04 /* NounaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3DC22BBFCDA008B7A04 /* NounaiViewController.swift */; };
+		C719B3DF22BC12C1008B7A04 /* NounaiGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3DE22BC12C1008B7A04 /* NounaiGameViewController.swift */; };
+		C719B3FF22BDB867008B7A04 /* NounaiTaikyokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719B3FE22BDB867008B7A04 /* NounaiTaikyokuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C719B3D822BBE880008B7A04 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		C719B3DA22BBF2EB008B7A04 /* Tsume_selectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tsume_selectViewController.swift; sourceTree = "<group>"; };
 		C719B3DC22BBFCDA008B7A04 /* NounaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NounaiViewController.swift; sourceTree = "<group>"; };
+		C719B3DE22BC12C1008B7A04 /* NounaiGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NounaiGameViewController.swift; sourceTree = "<group>"; };
+		C719B3FE22BDB867008B7A04 /* NounaiTaikyokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NounaiTaikyokuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				C719B3D822BBE880008B7A04 /* TitleViewController.swift */,
 				C719B3DA22BBF2EB008B7A04 /* Tsume_selectViewController.swift */,
 				C719B3DC22BBFCDA008B7A04 /* NounaiViewController.swift */,
+				C719B3DE22BC12C1008B7A04 /* NounaiGameViewController.swift */,
+				C719B3FE22BDB867008B7A04 /* NounaiTaikyokuViewController.swift */,
 			);
 			path = "Tsume-syogi";
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C719B3C722BBE40B008B7A04 /* AppDelegate.swift in Sources */,
+				C719B3FF22BDB867008B7A04 /* NounaiTaikyokuViewController.swift in Sources */,
+				C719B3DF22BC12C1008B7A04 /* NounaiGameViewController.swift in Sources */,
 				C719B3DB22BBF2EB008B7A04 /* Tsume_selectViewController.swift in Sources */,
 				C719B3DD22BBFCDA008B7A04 /* NounaiViewController.swift in Sources */,
 				C719B3D922BBE880008B7A04 /* TitleViewController.swift in Sources */,

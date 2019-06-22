@@ -144,7 +144,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teQ-ty-Cxc">
-                                <rect key="frame" x="89" y="410" width="50" height="50"/>
+                                <rect key="frame" x="97" y="410" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="AkB-lg-mES"/>
                                     <constraint firstAttribute="height" constant="50" id="hBP-6Q-qii"/>
@@ -165,31 +165,105 @@
                                     <action selector="gachizei:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="GIL-Uh-689"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-Qy-an9">
+                                <rect key="frame" x="184" y="630" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Fjx-bn-gO8"/>
+                                    <constraint firstAttribute="height" constant="150" id="SYP-ux-WdR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
+                                <state key="normal" title="挑戦！"/>
+                                <connections>
+                                    <action selector="tappedCyosen:" destination="0Ok-ce-8aD" eventType="touchUpInside" id="o0H-UU-QuH"/>
+                                    <segue destination="YgE-bW-fXO" kind="show" id="3Mg-Lg-JAi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RU8-GX-qNv" firstAttribute="leading" secondItem="xHo-fH-2Ts" secondAttribute="trailing" id="2tP-pz-ocE"/>
                             <constraint firstItem="HR6-Gd-PEr" firstAttribute="top" secondItem="4mx-dm-dmk" secondAttribute="bottom" constant="120" id="3be-NF-xUh"/>
+                            <constraint firstItem="Hwn-oc-f1K" firstAttribute="trailing" secondItem="hdW-Qy-an9" secondAttribute="trailing" constant="80" id="74V-xK-T1L"/>
                             <constraint firstItem="RU8-GX-qNv" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="Ex2-S5-Dtv"/>
                             <constraint firstItem="4mx-dm-dmk" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="M62-fK-JND"/>
                             <constraint firstItem="4mx-dm-dmk" firstAttribute="leading" secondItem="8pS-0J-v4r" secondAttribute="trailing" id="UHt-xc-UBx"/>
                             <constraint firstItem="xHo-fH-2Ts" firstAttribute="top" secondItem="teQ-ty-Cxc" secondAttribute="bottom" constant="120" id="WPx-rB-I0z"/>
                             <constraint firstItem="RU8-GX-qNv" firstAttribute="top" secondItem="HR6-Gd-PEr" secondAttribute="bottom" constant="120" id="Wja-vY-XZG"/>
+                            <constraint firstItem="hdW-Qy-an9" firstAttribute="top" secondItem="RU8-GX-qNv" secondAttribute="bottom" id="Xgj-KI-bhu"/>
                             <constraint firstItem="OCM-b9-9f2" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="YFC-ix-qUx"/>
                             <constraint firstItem="HR6-Gd-PEr" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="ZgA-DO-0e7"/>
                             <constraint firstItem="4mx-dm-dmk" firstAttribute="top" secondItem="OCM-b9-9f2" secondAttribute="bottom" constant="120" id="bxN-GT-NBd"/>
                             <constraint firstItem="8pS-0J-v4r" firstAttribute="top" secondItem="OCM-b9-9f2" secondAttribute="bottom" constant="120" id="faV-QM-Y7e"/>
-                            <constraint firstItem="HR6-Gd-PEr" firstAttribute="leading" secondItem="teQ-ty-Cxc" secondAttribute="trailing" constant="8" symbolic="YES" id="i4t-qQ-8iN"/>
+                            <constraint firstItem="HR6-Gd-PEr" firstAttribute="leading" secondItem="teQ-ty-Cxc" secondAttribute="trailing" id="itJ-hG-ft2"/>
                             <constraint firstItem="HR6-Gd-PEr" firstAttribute="centerX" secondItem="FEv-Bh-9Ej" secondAttribute="centerX" id="qCb-nn-XDp"/>
                             <constraint firstItem="OCM-b9-9f2" firstAttribute="top" secondItem="Hwn-oc-f1K" secondAttribute="top" constant="40" id="rCT-Bu-khF"/>
                             <constraint firstItem="teQ-ty-Cxc" firstAttribute="top" secondItem="8pS-0J-v4r" secondAttribute="bottom" constant="120" id="yrC-pt-O6L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hwn-oc-f1K"/>
                     </view>
+                    <connections>
+                        <outlet property="cyosen" destination="hdW-Qy-an9" id="Y88-92-YrQ"/>
+                        <outlet property="cyukyusya" destination="HR6-Gd-PEr" id="hhd-2I-L5E"/>
+                        <outlet property="fu" destination="8pS-0J-v4r" id="WFP-px-Jpl"/>
+                        <outlet property="gachizai" destination="RU8-GX-qNv" id="Q6h-oJ-qK2"/>
+                        <outlet property="gin" destination="teQ-ty-Cxc" id="230-X5-8n0"/>
+                        <outlet property="hisya" destination="xHo-fH-2Ts" id="rjp-cV-ZaE"/>
+                        <outlet property="syoshinsya" destination="4mx-dm-dmk" id="fGw-Wm-1b9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHl-0T-MZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="795.6521739130435" y="491.51785714285711"/>
+        </scene>
+        <!--Nounai Game View Controller-->
+        <scene sceneID="vjO-Ey-lQO">
+            <objects>
+                <viewController id="YgE-bW-fXO" customClass="NounaiGameViewController" customModule="Tsume_syogi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="klX-Yq-la3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDA-in-SaR">
+                                <rect key="frame" x="87" y="144" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="mMb-rb-Auv"/>
+                                    <constraint firstAttribute="width" constant="240" id="mts-A6-C8a"/>
+                                </constraints>
+                                <state key="normal" image="ふ_3"/>
+                                <connections>
+                                    <segue destination="bre-tv-eMJ" kind="show" id="hBg-ay-bVP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YDA-in-SaR" firstAttribute="centerX" secondItem="klX-Yq-la3" secondAttribute="centerX" id="6u0-9x-RPf"/>
+                            <constraint firstItem="YDA-in-SaR" firstAttribute="top" secondItem="E4s-ws-C5T" secondAttribute="top" constant="100" id="O6G-zj-tx7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E4s-ws-C5T"/>
+                    </view>
+                    <connections>
+                        <outlet property="furigoma" destination="YDA-in-SaR" id="S6F-if-WU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KH1-EX-RMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627.536231884058" y="488.83928571428567"/>
+        </scene>
+        <!--Nounai Taikyoku View Controller-->
+        <scene sceneID="rxy-oo-G6j">
+            <objects>
+                <viewController id="bre-tv-eMJ" customClass="NounaiTaikyokuViewController" customModule="Tsume_syogi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mn4-E8-ty9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wwc-rA-Jpk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Qb-NW-9dV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2503" y="489"/>
         </scene>
         <!--Tsume select View Controller-->
         <scene sceneID="JaW-5E-nu2">
