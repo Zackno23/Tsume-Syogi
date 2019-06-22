@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class NounaiGameViewController: UIViewController {
 var furigoma_touched = false
 @IBOutlet weak var furigoma: UIButton!
@@ -34,8 +35,10 @@ var furigoma_touched = false
             sengoText.isHidden = false
             if timerCount % 2 == 0{
                 sengoText.text = "あなたが先手です"
+                sengo = 0
             }else{
-                sengoText.text = "あなたは後手です。"
+                sengoText.text = "あなたは後手です."
+                sengo = 1
             }
         }
     }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var sengo = 0
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

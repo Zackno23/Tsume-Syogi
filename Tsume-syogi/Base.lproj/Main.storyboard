@@ -348,6 +348,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wwc-rA-Jpk"/>
                     </view>
+                    <connections>
+                        <outlet property="Funyanza" destination="A8O-g9-GPh" id="TSD-mI-JXf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qb-NW-9dV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
