@@ -294,8 +294,8 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETb-HD-8P3">
                                 <rect key="frame" x="47" y="636" width="320" height="216"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJE-Al-Yfi">
-                                <rect key="frame" x="40" y="329" width="184" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動かす駒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJE-Al-Yfi">
+                                <rect key="frame" x="115" y="329" width="184" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="184" id="H7s-01-oK2"/>
                                     <constraint firstAttribute="height" constant="59" id="kQ7-4p-uDY"/>
@@ -326,41 +326,96 @@
                                     <action selector="SujiButton:" destination="bre-tv-eMJ" eventType="touchUpInside" id="1su-td-iBf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZd-ag-epm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指し手" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VE4-nF-Add">
+                                <rect key="frame" x="115" y="486" width="184" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="7uH-P2-8ME"/>
+                                    <constraint firstAttribute="height" constant="59" id="OgA-vL-HZb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmh-pV-Ccv">
+                                <rect key="frame" x="177" y="553" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="KRS-aj-L0g"/>
+                                    <constraint firstAttribute="height" constant="60" id="mcT-QK-m3Q"/>
+                                </constraints>
+                                <state key="normal" title="段"/>
+                                <connections>
+                                    <action selector="sashitedan:" destination="bre-tv-eMJ" eventType="touchUpInside" id="dED-ib-Nxn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jL-K3-AqP">
+                                <rect key="frame" x="87" y="553" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kPD-ll-oAT"/>
+                                    <constraint firstAttribute="width" constant="60" id="wgU-KS-WQH"/>
+                                </constraints>
+                                <state key="normal" title="筋"/>
+                                <connections>
+                                    <action selector="sashitesuji:" destination="bre-tv-eMJ" eventType="touchUpInside" id="Vdb-eV-fQb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xv-qI-ADp">
                                 <rect key="frame" x="267" y="418" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="4xH-2c-n4i"/>
-                                    <constraint firstAttribute="width" constant="60" id="yyo-72-zuv"/>
+                                    <constraint firstAttribute="height" constant="60" id="q0v-F9-HN0"/>
+                                    <constraint firstAttribute="width" constant="60" id="vxG-ja-zah"/>
                                 </constraints>
                                 <state key="normal" title="駒"/>
                                 <connections>
-                                    <action selector="KomaButton:" destination="bre-tv-eMJ" eventType="touchUpInside" id="c7g-t8-ImG"/>
+                                    <action selector="KomaButton:" destination="bre-tv-eMJ" eventType="touchUpInside" id="CJW-Ww-Q4W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-l9-PU8">
+                                <rect key="frame" x="267" y="545" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="JcL-tz-5Z2"/>
+                                    <constraint firstAttribute="height" constant="60" id="joT-ob-Y96"/>
+                                </constraints>
+                                <state key="normal" title="着手!"/>
+                                <connections>
+                                    <action selector="Cyakusyu:" destination="bre-tv-eMJ" eventType="touchUpInside" id="GuX-34-Bjo"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Fbj-8Z-DvF" firstAttribute="centerX" secondItem="Mn4-E8-ty9" secondAttribute="centerX" id="4b4-uL-PNm"/>
+                            <constraint firstItem="7Xv-qI-ADp" firstAttribute="leading" secondItem="Fbj-8Z-DvF" secondAttribute="trailing" constant="30" id="4tH-Mc-L6b"/>
                             <constraint firstItem="Fbj-8Z-DvF" firstAttribute="centerY" secondItem="Mn4-E8-ty9" secondAttribute="centerY" id="6a8-7g-7Vc"/>
                             <constraint firstItem="ieQ-Yf-w9o" firstAttribute="leading" secondItem="Wwc-rA-Jpk" secondAttribute="leading" constant="40" id="7qw-0Q-gyM"/>
-                            <constraint firstItem="OZd-ag-epm" firstAttribute="leading" secondItem="Fbj-8Z-DvF" secondAttribute="trailing" constant="30" id="7s3-NR-OgW"/>
                             <constraint firstItem="ieQ-Yf-w9o" firstAttribute="top" secondItem="Wwc-rA-Jpk" secondAttribute="top" constant="80" id="CeS-E7-qKH"/>
                             <constraint firstItem="A8O-g9-GPh" firstAttribute="centerX" secondItem="Mn4-E8-ty9" secondAttribute="centerX" id="DXy-yY-qsn"/>
-                            <constraint firstItem="OZd-ag-epm" firstAttribute="centerY" secondItem="Mn4-E8-ty9" secondAttribute="centerY" id="TPX-uW-FbZ"/>
+                            <constraint firstItem="Fbj-8Z-DvF" firstAttribute="centerY" secondItem="Mn4-E8-ty9" secondAttribute="centerY" id="FHi-De-w88"/>
+                            <constraint firstItem="Auf-l9-PU8" firstAttribute="top" secondItem="VE4-nF-Add" secondAttribute="bottom" id="N1j-Au-Cfn"/>
+                            <constraint firstItem="VE4-nF-Add" firstAttribute="top" secondItem="Fbj-8Z-DvF" secondAttribute="bottom" constant="8" symbolic="YES" id="N3R-R8-t7Z"/>
+                            <constraint firstItem="VE4-nF-Add" firstAttribute="centerX" secondItem="Mn4-E8-ty9" secondAttribute="centerX" id="N5i-wz-HaE"/>
                             <constraint firstItem="Wwc-rA-Jpk" firstAttribute="bottom" secondItem="ETb-HD-8P3" secondAttribute="bottom" constant="10" id="ZAJ-Dc-OGV"/>
                             <constraint firstItem="ETb-HD-8P3" firstAttribute="centerX" secondItem="Mn4-E8-ty9" secondAttribute="centerX" id="c3Z-qV-1rD"/>
+                            <constraint firstItem="7Xv-qI-ADp" firstAttribute="centerY" secondItem="Mn4-E8-ty9" secondAttribute="centerY" id="cOT-AD-ZSy"/>
+                            <constraint firstItem="Rmh-pV-Ccv" firstAttribute="centerX" secondItem="Mn4-E8-ty9" secondAttribute="centerX" id="eLP-5e-oJT"/>
+                            <constraint firstItem="Rmh-pV-Ccv" firstAttribute="top" secondItem="VE4-nF-Add" secondAttribute="bottom" constant="8" symbolic="YES" id="eSk-aM-82M"/>
                             <constraint firstItem="Fbj-8Z-DvF" firstAttribute="leading" secondItem="uyb-kn-6CY" secondAttribute="trailing" constant="30" id="gnY-ji-gcQ"/>
                             <constraint firstItem="Fbj-8Z-DvF" firstAttribute="top" secondItem="kJE-Al-Yfi" secondAttribute="bottom" constant="30" id="gyN-dO-Nfn"/>
-                            <constraint firstItem="kJE-Al-Yfi" firstAttribute="leading" secondItem="Wwc-rA-Jpk" secondAttribute="leading" constant="40" id="hHI-eP-uJC"/>
                             <constraint firstItem="uyb-kn-6CY" firstAttribute="centerY" secondItem="Mn4-E8-ty9" secondAttribute="centerY" id="k1h-C3-Vek"/>
+                            <constraint firstItem="Auf-l9-PU8" firstAttribute="leading" secondItem="Rmh-pV-Ccv" secondAttribute="trailing" constant="30" id="kRN-4e-VWm"/>
+                            <constraint firstItem="Rmh-pV-Ccv" firstAttribute="leading" secondItem="0jL-K3-AqP" secondAttribute="trailing" constant="30" id="pr1-9B-SKn"/>
+                            <constraint firstItem="0jL-K3-AqP" firstAttribute="top" secondItem="VE4-nF-Add" secondAttribute="bottom" constant="8" symbolic="YES" id="tbz-C2-9zQ"/>
                             <constraint firstItem="A8O-g9-GPh" firstAttribute="top" secondItem="ieQ-Yf-w9o" secondAttribute="bottom" id="u39-Zz-SKo"/>
+                            <constraint firstItem="kJE-Al-Yfi" firstAttribute="centerX" secondItem="Mn4-E8-ty9" secondAttribute="centerX" id="wwf-bg-FkG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wwc-rA-Jpk"/>
                     </view>
                     <connections>
                         <outlet property="Funyanza" destination="A8O-g9-GPh" id="TSD-mI-JXf"/>
+                        <outlet property="SashiteDan" destination="Rmh-pV-Ccv" id="b3K-6i-jnJ"/>
+                        <outlet property="SashiteSuji" destination="0jL-K3-AqP" id="55X-px-gvQ"/>
+                        <outlet property="cyakusyu" destination="Auf-l9-PU8" id="6gL-p8-WDe"/>
                         <outlet property="danButton" destination="Fbj-8Z-DvF" id="xGh-WF-l8t"/>
-                        <outlet property="komaButton" destination="OZd-ag-epm" id="kxc-tp-HDb"/>
+                        <outlet property="komaButton" destination="7Xv-qI-ADp" id="wdj-Wm-GUm"/>
                         <outlet property="picker" destination="ETb-HD-8P3" id="ibj-tg-XZj"/>
                         <outlet property="sujiButton" destination="uyb-kn-6CY" id="xFc-Yl-bnT"/>
                     </connections>
